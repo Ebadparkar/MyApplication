@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sign_in_page"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:textStyle="bold">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="@color/white"
+                android:textSize="20sp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/sign_in_username"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_background"
+                android:hint="Enter username"
+                android:minHeight="48dp"
+                android:padding="5dp"></EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="@color/white"
+                android:textSize="20sp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/sign_in_password"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_background"
+                android:hint="Enter password"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:padding="5dp"></EditText>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/forgot_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot password?"
+            android:textColor="@color/white"
+            android:layout_marginLeft="38dp"
+            android:textSize="20sp">
+        </TextView>
+
+        <Button
+            android:id="@+id/sign_in_login_btn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/black"
+
+            android:textSize="30sp"
+            android:background="@drawable/black_background"
+            android:gravity="center"
+            android:layout_marginTop="15dp">
+        </Button>
+    </LinearLayout>
+</LinearLayout>
